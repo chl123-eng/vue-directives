@@ -17,11 +17,6 @@ const LazyLoad = {
   observe(el) {
     var io = new IntersectionObserver((entries) => {
       const realSrc = el.dataset.src;
-      console.log(
-        entries[0].isIntersecting,
-        realSrc,
-        "entries[0].isIntersectingentries[0].isIntersectingentries[0].isIntersecting"
-      );
       if (entries[0].isIntersecting) {
         if (realSrc) {
           el.src = realSrc;

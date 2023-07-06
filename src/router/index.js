@@ -26,6 +26,11 @@ const router = new VueRouter({
       name: "lazyLoad",
       component: () => import("../views/lazyLoad.vue"),
     },
+    {
+      path: "/permission",
+      name: "permission",
+      component: () => import("../views/permissionView.vue"),
+    },
   ],
 });
 
