@@ -21,6 +21,11 @@ const router = new VueRouter({
       name: "longPress",
       component: () => import("../views/longPress.vue"),
     },
+    {
+      path: "/lazyLoad",
+      name: "lazyLoad",
+      component: () => import("../views/lazyLoad.vue"),
+    },
   ],
 });
 
